@@ -23,3 +23,7 @@ If you've cloned this repo and made edits, you can preview your changes with:
 > **Note**: you need to have `uv` installed.
 
 Then open http://localhost:8000. Edits to the markdown reload automatically.
+
+## License
+
+Content is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). See [LICENSE](LICENSE).
