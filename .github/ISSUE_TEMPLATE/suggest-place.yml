@@ -1,0 +1,38 @@
+name: Suggest a place
+description: Suggest a place to eat, drink, or visit in San Diego.
+title: "Suggest: "
+labels: ["suggestion"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      description: Name of the place.
+    validations:
+      required: true
+  - type: dropdown
+    id: section
+    attributes:
+      label: Section
+      options:
+        - Food
+        - Places and sights
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: area
+    attributes:
+      label: Neighborhood or area
+      placeholder: e.g. Kearny Mesa, La Jolla
+  - type: input
+    id: link
+    attributes:
+      label: Website or map link
+  - type: textarea
+    id: why
+    attributes:
+      label: Why do you recommend it?
+      description: What to order or do, parking tips, anything useful.
+    validations:
+      required: true

@@ -1,0 +1,30 @@
+name: Correction or update
+description: Report a closed place, wrong link, outdated info, or a typo.
+title: "Fix: "
+labels: ["correction"]
+body:
+  - type: input
+    id: place
+    attributes:
+      label: Place or section
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What's wrong?
+      options:
+        - Permanently closed or moved
+        - Broken or wrong link
+        - Outdated info (hours, menu, parking)
+        - Typo or formatting
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: What should it say instead? Include a source link if you have one.
+    validations:
+      required: true
